@@ -1,0 +1,28 @@
+﻿# AWS credentials — NEVER commit
+.aws/
+credentials
+*.pem
+*.p12
+*.key
+.env
+.env.*
+secrets.yaml
+secrets.json
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
