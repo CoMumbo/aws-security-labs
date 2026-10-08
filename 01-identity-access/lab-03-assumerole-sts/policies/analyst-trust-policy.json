@@ -1,0 +1,13 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowAdminZeffToAssume",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::803964124082:user/admin-zeff"
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}
