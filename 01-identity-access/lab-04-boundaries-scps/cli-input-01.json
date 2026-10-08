@@ -1,0 +1,10 @@
+{
+  "PolicyInputList": [
+    "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"AllowEverythingWeMightWant\",\"Effect\":\"Allow\",\"Action\":[\"s3:*\",\"ec2:*\",\"iam:ListUsers\"],\"Resource\":\"*\"}]}"
+  ],
+  "PermissionsBoundaryPolicyInputList": [
+    "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"AllowS3ReadOnly\",\"Effect\":\"Allow\",\"Action\":[\"s3:GetObject\",\"s3:ListBucket\",\"s3:ListAllMyBuckets\"],\"Resource\":\"*\"}]}"
+  ],
+  "ActionNames": ["s3:GetObject"],
+  "ResourceArns": ["arn:aws:s3:::any-bucket/file.txt"]
+}
