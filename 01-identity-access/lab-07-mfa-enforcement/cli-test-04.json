@@ -1,0 +1,11 @@
+{
+  "PolicyInputList": [
+    "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"AllowAll\",\"Effect\":\"Allow\",\"Action\":\"*\",\"Resource\":\"*\"}]}",
+    "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"DenyAllExceptMFASetup\",\"Effect\":\"Deny\",\"NotAction\":[\"iam:CreateVirtualMFADevice\",\"iam:EnableMFADevice\",\"iam:GetUser\",\"iam:ListMFADevices\",\"iam:ResyncMFADevice\",\"sts:GetSessionToken\"],\"Resource\":\"*\",\"Condition\":{\"BoolIfExists\":{\"aws:MultiFactorAuthPresent\":\"false\"}}}]}"
+  ],
+  "ActionNames": ["s3:DeleteBucket"],
+  "ResourceArns": ["*"],
+  "ContextEntries": [
+    {"ContextKeyName": "aws:MultiFactorAuthPresent", "ContextKeyType": "boolean", "ContextKeyValues": ["true"]}
+  ]
+}

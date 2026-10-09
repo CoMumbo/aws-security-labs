@@ -1,0 +1,16 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyIfMFAStale",
+      "Effect": "Deny",
+      "Action": "*",
+      "Resource": "*",
+      "Condition": {
+        "NumericGreaterThan": {
+          "aws:MultiFactorAuthAge": "900"
+        }
+      }
+    }
+  ]
+}
