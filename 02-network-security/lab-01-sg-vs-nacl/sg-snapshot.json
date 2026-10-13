@@ -1,0 +1,40 @@
+﻿{
+    "SecurityGroups": [
+        {
+            "GroupId": "sg-0628553cf45107da1",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-0b00f49eaaa30977c",
+            "SecurityGroupArn": "arn:aws:ec2:eu-north-1:803964124082:security-group/sg-0628553cf45107da1",
+            "OwnerId": "803964124082",
+            "GroupName": "lab21-test-sg",
+            "Description": "Lab 2.1 test security group",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 80,
+                    "ToPort": 80,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        }
+    ]
+}
