@@ -1,0 +1,26 @@
+﻿{
+  "RuleGroupName": "block-suspicious-ips",
+  "Type": "STATELESS",
+  "Capacity": 100,
+  "RuleGroup": {
+    "RulesSource": {
+      "StatelessRulesAndCustomActions": {
+        "StatelessRules": [
+          {
+            "RuleDefinition": {
+              "MatchAttributes": {
+                "Sources": [{"AddressDefinition": "203.0.113.0/24"}],
+                "Destinations": [{"AddressDefinition": "0.0.0.0/0"}],
+                "Protocols": [6],
+                "DestinationPorts": [{"FromPort": 0, "ToPort": 65535}]
+              },
+              "Actions": ["aws:drop"]
+            },
+            "Priority": 1
+          }
+        ]
+      }
+    }
+  },
+  "Description": "Drop all traffic from a suspicious external CIDR"
+}

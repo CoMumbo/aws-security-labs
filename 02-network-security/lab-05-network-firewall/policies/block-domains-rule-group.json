@@ -1,0 +1,19 @@
+﻿{
+  "RuleGroupName": "block-malicious-domains",
+  "Type": "STATEFUL",
+  "Capacity": 100,
+  "RuleGroup": {
+    "RulesSource": {
+      "RulesSourceList": {
+        "Targets": [
+          ".malware.example.com",
+          ".c2-server.example.net",
+          ".phishing.example.org"
+        ],
+        "TargetTypes": ["HTTP_HOST", "TLS_SNI"],
+        "GeneratedRulesType": "DENYLIST"
+      }
+    }
+  },
+  "Description": "Block outbound traffic to known malicious domains"
+}

@@ -1,0 +1,19 @@
+﻿{
+  "FirewallPolicyName": "lab25-firewall-policy",
+  "FirewallPolicy": {
+    "StatelessDefaultActions": ["aws:forward_to_sfe"],
+    "StatelessFragmentDefaultActions": ["aws:forward_to_sfe"],
+    "StatefulRuleGroupReferences": [
+      {"ResourceArn": "arn:aws:network-firewall:eu-north-1:803964124082:stateful-rulegroup/block-malicious-domains"}
+    ],
+    "StatelessRuleGroupReferences": [
+      {"ResourceArn": "arn:aws:network-firewall:eu-north-1:803964124082:stateless-rulegroup/block-suspicious-ips", "Priority": 1}
+    ],
+    "StatefulDefaultActions": ["aws:drop_established"],
+    "StatefulEngineOptions": {
+      "RuleOrder": "STRICT_ORDER",
+      "StreamExceptionPolicy": "DROP"
+    }
+  },
+  "Description": "Lab 2.5 demo policy - blocks suspicious IPs and malicious domains"
+}

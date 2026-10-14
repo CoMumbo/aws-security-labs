@@ -1,0 +1,13 @@
+﻿{
+  "FirewallName": "lab25-firewall",
+  "FirewallPolicyArn": "arn:aws:network-firewall:eu-north-1:803964124082:firewall-policy/lab25-firewall-policy",
+  "VpcId": "vpc-0b00f49eaaa30977c",
+  "SubnetMappings": [
+    {"SubnetId": "REPLACE-WITH-FIREWALL-SUBNET-AZ-A"},
+    {"SubnetId": "REPLACE-WITH-FIREWALL-SUBNET-AZ-B"}
+  ],
+  "DeleteProtection": false,
+  "FirewallPolicyChangeProtection": false,
+  "SubnetChangeProtection": false,
+  "Description": "Lab 2.5 demo firewall - deployed in dedicated inspection subnets"
+}
