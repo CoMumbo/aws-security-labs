@@ -26,3 +26,8 @@ venv/
 *.swp
 .DS_Store
 Thumbs.db
+
+# KMS lab - never commit key material
+*-datakey.bin
+recovered-*.bin
+secret.txt
