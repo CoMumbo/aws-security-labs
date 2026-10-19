@@ -1,0 +1,9 @@
+{
+  "status": "ENABLED",
+  "findingPublishingFrequency": "FIFTEEN_MINUTES",
+  "autoEnable": false,
+  "s3Destination": {
+    "bucketName": "REPLACE-WITH-LOG-BUCKET",
+    "keyPrefix": "macie-findings/"
+  }
+}

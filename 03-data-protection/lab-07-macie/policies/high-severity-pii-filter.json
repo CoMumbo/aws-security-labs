@@ -1,0 +1,15 @@
+{
+  "name": "HighSeverityPII",
+  "description": "Show all high-severity PII findings",
+  "action": "PUBLISH",
+  "findingCriteria": {
+    "criterion": {
+      "severity.description": {
+        "eq": ["High"]
+      },
+      "category": {
+        "eq": ["PERSONAL_INFORMATION"]
+      }
+    }
+  }
+}

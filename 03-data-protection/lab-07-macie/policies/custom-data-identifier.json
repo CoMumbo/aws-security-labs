@@ -1,0 +1,5 @@
+{
+  "Name": "Lab37-EmployeeID",
+  "Description": "Matches employee IDs in format EMP-XXXXXX",
+  "Regex": "EMP-[0-9]{6}"
+}
