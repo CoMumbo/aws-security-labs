@@ -1,0 +1,4 @@
+{
+  "StandardsArn": "arn:aws:securityhub:eu-north-1::standards/cis-aws-foundations-benchmark/v/1.4.0",
+  "StandardsInput": {}
+}

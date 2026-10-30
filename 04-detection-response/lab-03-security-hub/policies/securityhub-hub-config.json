@@ -1,0 +1,5 @@
+{
+  "EnableDefaultStandards": true,
+  "ControlFindingGenerator": "SECURITY_CONTROL",
+  "AutoEnableControls": true
+}
