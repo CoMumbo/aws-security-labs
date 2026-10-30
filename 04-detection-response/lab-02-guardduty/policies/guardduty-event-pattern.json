@@ -1,0 +1,7 @@
+{
+  "source": ["aws.guardduty", "lab42.simulated.guardduty"],
+  "detail-type": ["GuardDuty Finding"],
+  "detail": {
+    "severity": [{"numeric": [">=", 7]}]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "Name": "HighSeverityCritical",
+  "Description": "Publish only high-severity GuardDuty findings",
+  "FindingCriteria": {
+    "Criterion": {
+      "severity": {"Gte": 7}
+    }
+  },
+  "Action": "PUBLISH",
+  "Rank": 1
+}

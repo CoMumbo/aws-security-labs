@@ -1,0 +1,5 @@
+{
+  "DetectionDestinationType": "SNS",
+  "SnsTopicArn": "arn:aws:sns:eu-north-1:803964124082:lab42-guardduty-findings",
+  "PublishingFrequency": "FIFTEEN_MINUTES"
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "Source": "lab42.simulated.guardduty",
+    "DetailType": "GuardDuty Finding",
+    "Detail": "{\"severity\": 8.5, \"type\": \"UnauthorizedAccess:IAMUser/InstanceCredentialExfiltration.OutsideAWS\", \"title\": \"Credentials leaked from EC2 instance\", \"description\": \"An EC2 instance role credential was used from an external IP\", \"accountId\": \"803964124082\", \"region\": \"eu-north-1\", \"resource\": {\"resourceType\": \"Instance\", \"instanceDetails\": {\"instanceId\": \"i-abc123\"}}}",
+    "EventBusName": "default"
+  }
+]
