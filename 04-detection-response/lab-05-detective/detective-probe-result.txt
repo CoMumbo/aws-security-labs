@@ -1,0 +1,16 @@
+aws : 
+At line:1 char:1
++ aws detective list-graphs 2>&1 | Out-File -Encoding ascii detective-p ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+aws: [ERROR]: An error occurred (AccessDeniedException) when calling the ListGraphs operation: User: arn:aws:iam::803964124082:user/admin-zeff is not authorized to 
+perform: detective:ListGraphs on resource: * with an explicit deny in a service control policy: 
+arn:aws:organizations::321043732798:policy/o-g4oan97ai8/service_control_policy/p-whl27g4i
+
+Additional error details:
+ErrorCode: 
+ErrorCodeReason: 
+SubErrorCode: 
+SubErrorCodeReason: 

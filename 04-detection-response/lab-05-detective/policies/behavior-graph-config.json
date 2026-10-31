@@ -1,0 +1,7 @@
+{
+  "GraphName": "lab45-behavior-graph",
+  "Tags": [
+    {"Key": "Environment", "Value": "lab"},
+    {"Key": "Purpose", "Value": "security-investigation"}
+  ]
+}

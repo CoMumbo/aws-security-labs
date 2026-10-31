@@ -1,0 +1,43 @@
+{
+  "InvestigationPatterns": [
+    {
+      "Name": "CompromisedInstanceInvestigation",
+      "Description": "Investigate a GuardDuty finding for a compromised EC2 instance",
+      "StartingPoint": "instanceId",
+      "Queries": [
+        "Which IAM role is attached to the instance?",
+        "What API calls has the instance made in the last 24 hours?",
+        "What network connections has the instance made?",
+        "Is this instance communicating with known-bad IPs?",
+        "Are other resources using the same credentials?",
+        "What resources did the instance access?"
+      ]
+    },
+    {
+      "Name": "CompromisedCredentialInvestigation",
+      "Description": "Investigate a leaked IAM credential",
+      "StartingPoint": "accessKeyId",
+      "Queries": [
+        "What API calls were made with this key?",
+        "From what IP addresses?",
+        "From what countries?",
+        "What resources were accessed?",
+        "Was this pattern normal for this user/role?",
+        "What data was exfiltrated, if any?"
+      ]
+    },
+    {
+      "Name": "CryptominingInvestigation",
+      "Description": "Investigate a CryptoCurrency GuardDuty finding",
+      "StartingPoint": "instanceId",
+      "Queries": [
+        "What instance type and region was used?",
+        "When was the instance launched?",
+        "What DNS queries has the instance made?",
+        "What IPs has it connected to?",
+        "What other instances share the same activity pattern?",
+        "What user or role launched the instance?"
+      ]
+    }
+  ]
+}
