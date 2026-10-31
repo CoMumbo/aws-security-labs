@@ -1,0 +1,7 @@
+{
+  "ConfigRuleName": "lab44-encrypted-volumes",
+  "Source": {
+    "Owner": "AWS",
+    "SourceIdentifier": "ENCRYPTED_VOLUMES"
+  }
+}
