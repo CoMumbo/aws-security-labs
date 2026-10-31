@@ -1,0 +1,8 @@
+[
+  {
+    "Source": "lab46.simulated.guardduty",
+    "DetailType": "GuardDuty Finding",
+    "Detail": "{\"type\":\"UnauthorizedAccess:IAMUser/InstanceCredentialExfiltration.OutsideAWS\",\"severity\":8.0,\"accessKeyId\":\"AKIAFAKEKEY123456789\"}",
+    "EventBusName": "default"
+  }
+]

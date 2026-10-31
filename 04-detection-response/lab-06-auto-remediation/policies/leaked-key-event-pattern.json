@@ -1,0 +1,7 @@
+{
+  "source": ["lab46.simulated.guardduty"],
+  "detail-type": ["GuardDuty Finding"],
+  "detail": {
+    "type": ["UnauthorizedAccess:IAMUser/InstanceCredentialExfiltration.OutsideAWS", "UnauthorizedAccess:IAMUser/TorIPCaller"]
+  }
+}
